@@ -1,10 +1,10 @@
-package com.eaf.eaftestservice;
+package com.eaf.delivery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EafTestServiceApplicationTests {
+class DeliveryApplicationTests {
 
 	@Test
 	void contextLoads() {

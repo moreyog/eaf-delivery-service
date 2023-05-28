@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eaf</groupId>
-	<artifactId>efa-restorent-service</artifactId>
+	<artifactId>eaf-delivery-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>efa-restorent-service</name>
+	<name>eaf-delivery-service</name>
 	<description>Enterprise Application Framework</description>
 	<properties>
 		<java.version>18</java.version>
@@ -31,6 +31,10 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

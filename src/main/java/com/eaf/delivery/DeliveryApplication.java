@@ -1,21 +1,17 @@
-package com.eaf.eaftestservice;
+package com.eaf.delivery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
-public class EafTestServiceApplication {
+@EnableDiscoveryClient
+public class DeliveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EafTestServiceApplication.class, args);
+		SpringApplication.run(DeliveryApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String helloWorld(){
-		return  "Hello World!!";
-	}
 }
